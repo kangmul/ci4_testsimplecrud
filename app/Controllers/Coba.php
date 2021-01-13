@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 namespace App\Controllers;
 
 class Coba extends BaseController
 {
-	private $nama = "Muluk Dharmayana"; 
-	public function index($nama)
+	public $namadev = "Muluk Dharmayana";
+	public function index()
 	{
 		echo "Ini adalah Controller Coba dengan method Index";
 		echo "<br>";
@@ -14,7 +14,7 @@ class Coba extends BaseController
 
 	public function coba()
 	{
-		echo "ini adalah Method Coba";
+		echo "ini adalah Method Coba dari CobaController dan menampilkan var dari BaseController " . $this->nama;
 	}
 
 	//--------------------------------------------------------------------
