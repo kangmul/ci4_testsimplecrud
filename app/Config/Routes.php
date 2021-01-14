@@ -46,6 +46,10 @@ $routes->get('/paramurl/(:any)/(:num)', 'ParamUrl::manualparam/$1/$2');
 // khusus controller AdminController
 $routes->get('/dashboard', 'Admin\AdminController::index');
 
+// routes untuk pages statis
+$routes->get('/home', 'Pages::index');
+$routes->get('/about', 'Pages::about');
+$routes->get('/contact', 'Pages::contact');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
