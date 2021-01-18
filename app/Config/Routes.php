@@ -31,7 +31,8 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::coba');
+// $routes->get('/', 'Home::coba');
+$routes->get('/', 'Persons::index');
 
 // penambahan routes
 $routes->get('/testurl', 'Coba::coba');
@@ -50,6 +51,13 @@ $routes->get('/dashboard', 'Admin\AdminController::index');
 $routes->get('/home', 'Pages::index');
 $routes->get('/about', 'Pages::about');
 $routes->get('/contact', 'Pages::contact');
+
+// route untuk pengelolaan persons models
+// $routes->get('/persons', 'Persons::index');
+// lakukan ini dulu supaya method request bisa di bedakan
+$routes->delete('/persons/(:num)', 'Persons::delete/$1');
+// untuk detail person
+$routes->get('/persons/detail/(:any)', 'Persons::detail/$1');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

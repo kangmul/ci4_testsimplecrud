@@ -9,6 +9,7 @@
                 <a class="nav-item nav-link active" href="/home">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="/about">About</a>
                 <a class="nav-item nav-link" href="/contact">Contact</a>
+                <a class="nav-item nav-link" href="/persons">Persons</a>
             </div>
         </div>
     </div>
